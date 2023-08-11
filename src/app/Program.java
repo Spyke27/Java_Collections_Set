@@ -1,10 +1,31 @@
 package app;
 
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
 public class Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Scanner scan = new Scanner(System.in);
+		
+		Set<String> set = new HashSet<>();
+		
+		set.add("Notebook");
+		set.add("Televisão");
+		set.add("Telefone");
+		
+		System.out.print("Pesquisar produto: ");
+		String productSearch = scan.next();
+		
+		if(set.contains(productSearch)) {
+			System.out.println("Product exists!");
+		}else {
+			System.out.println("Product doesn't exist!");
+		}
+		
+		
 	}
 
 }
