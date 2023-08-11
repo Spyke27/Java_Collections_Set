@@ -25,6 +25,11 @@ public class Program {
 			System.out.println("Product doesn't exist!");
 		}
 		
+		set.removeIf(x -> x.charAt(0) == 'N'); //Aspas simples
+		
+		for(String product: set) {
+			System.out.println(product);
+		}
 		
 	}
 
